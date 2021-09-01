@@ -1,38 +1,94 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.vh100 {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.h-4 {
+  width: 1rem !important;
+}
+
+.w-4 {
+  width: 1rem !important;
+}
+
+.hire-me-button {
+  border-radius: 3px;
+  padding: 0.3rem 0.5rem !important;
+}
+
+.right-icon {
+  margin-bottom: 2px !important;
+}
+
+.item-button-active {
+    color: #fff !important;
+    background-color: #565e64 !important;
+    border-color: #51585e !important;
+}
+
+.skill-graph {
+  width: 600px;
+}
+
+.skills-container {
+  width: 100%;
+  background: #f4f4f4;
+  margin-bottom: 10px;
+}
+
+.skills {
+  text-align: left;
+  padding: 10px 10px 10px 0px;
+}
+
+.skill-background {
+  background: rgba(200, 200, 200, 0.9);
+  padding: 10px;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+}
+
+.percent {
+  float: right;
+}
+
+.skills {
+  background: #ddd;
+}
+
+.html {
+  width: 70%;
+}
+
+.css {
+  width: 65%;
+}
+
+.c-sharp {
+  width: 30%;
+}
+
+.php {
+  width: 40%;
+}
+
+.js,
+.react {
+  width: 60%;
+}
+
+.text-background {
+  color: #333;
+  text-decoration: none !important;
+  background: #f4f4f4;
+}
+
+.paragraph > a {
+  color: #333 !important;
 }
