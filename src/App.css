@@ -24,9 +24,9 @@ a {
 }
 
 .item-button-active {
-    color: #fff !important;
-    background-color: #565e64 !important;
-    border-color: #51585e !important;
+  color: #fff !important;
+  background-color: #565e64 !important;
+  border-color: #51585e !important;
 }
 
 .skill-graph {
@@ -91,4 +91,22 @@ a {
 
 .paragraph > a {
   color: #333 !important;
+}
+
+.profile-background {
+  color: #f4f4f4 !important;
+  border-radius: 50px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  background: #f4f4f4;
+  border-radius: 100px;
+  margin: auto;
+
+  background-image: url("./assets/dayne.PNG");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: -30px;
 }
