@@ -1,16 +1,17 @@
-import React, { Component, Fragment } from 'react';
-import { ButtonGroup, Button } from 'react-bootstrap';
+import React, { Component, Fragment } from "react";
+import { ButtonGroup, Button } from "react-bootstrap";
 
-import Mediee from './projects/Mediee';
-import Gatsby from './projects/Gastby';
-import Sevens from './projects/Sevens';
+import Mediee from "./projects/Mediee";
+import Gatsby from "./projects/Gastby";
+import Sevens from "./projects/Sevens";
+import BlogWebsite from "./projects/BlogWebsite";
 
 class Multiple extends Component {
   constructor(props) {
     super(props);
 
     this.state = {
-      selectedComponent: 'mediee',
+      selectedComponent: "mediee",
       active: false,
     };
   }
@@ -26,18 +27,14 @@ class Multiple extends Component {
 
   switchContent = (value) => {
     switch (value) {
-      case 'mediee':
-        return (
-          <Mediee />
-        );
-      case 'gatsby':
-        return (
-          <Gatsby />
-        );
-      case 'sevens':
-        return (
-          <Sevens />
-        );
+      case "mediee":
+        return <Mediee />;
+      case "gatsby":
+        return <Gatsby />;
+      case "sevens":
+        return <Sevens />;
+      case "blogWebsite":
+        return <BlogWebsite />;
       default:
         return null;
     }
@@ -48,24 +45,49 @@ class Multiple extends Component {
 
     return (
       <Fragment>
-          <ButtonGroup aria-label="Projects Button Box" className="mb-3">
-                <Button variant="secondary" value="mediee" onClick={this.toggleContent} className={
-              selectedComponent === 'mediee'
-                ? 'item-button-active'
-                : ''
-            }>Mediee</Button>
-                <Button variant="secondary" value="sevens" onClick={this.toggleContent} className={
-              selectedComponent === 'sevens'
-                ? 'item-button-active'
-                : ''
-            }>Rugby 7s Website</Button>
-                <Button variant="secondary" value="gatsby" onClick={this.toggleContent} className={
-              selectedComponent === 'gatsby'
-                ? 'item-button-active'
-                : ''
-            }>Gatsby + Netlify</Button>
-            </ButtonGroup>
-            {this.switchContent(selectedComponent)}
+        <ButtonGroup aria-label="Projects Button Box" className="mb-3">
+          <Button
+            variant="secondary"
+            value="mediee"
+            onClick={this.toggleContent}
+            className={
+              selectedComponent === "mediee" ? "item-button-active" : ""
+            }
+          >
+            Mediee
+          </Button>
+          <Button
+            variant="secondary"
+            value="sevens"
+            onClick={this.toggleContent}
+            className={
+              selectedComponent === "sevens" ? "item-button-active" : ""
+            }
+          >
+            Rugby 7s Website
+          </Button>
+          <Button
+            variant="secondary"
+            value="gatsby"
+            onClick={this.toggleContent}
+            className={
+              selectedComponent === "gatsby" ? "item-button-active" : ""
+            }
+          >
+            Gatsby + Netlify
+          </Button>
+          <Button
+            variant="secondary"
+            value="blogWebsite"
+            onClick={this.toggleContent}
+            className={
+              selectedComponent === "blogWebsite" ? "item-button-active" : ""
+            }
+          >
+            Blog Website
+          </Button>
+        </ButtonGroup>
+        {this.switchContent(selectedComponent)}
       </Fragment>
     );
   }
