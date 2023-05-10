@@ -29,12 +29,6 @@ const [name, setName] = React.useState("");
         <p>Thank you for going through my website! This website is for ever updating (changing it to Gatsby is the next update!)</p>
         <p>Want to get a hold of me? View my Github and Social Media? No problem.</p>
         <h3 style={{marginBottom: '10px'}}>
-          <span className="text-background"><a href="mailto:daynegame024@gmail.com" style={{ color: '#333' }}>daynegame024@gmail.com</a></span>
-        </h3>
-        <h3 style={{marginBottom: '10px'}}>
-          <span className="text-background"><a href="tel:+642102993594" style={{ color: '#333' }}>02102993594</a></span>
-        </h3>
-        <h3 style={{marginBottom: '10px'}}>
           <span className="text-background"><a href="https://github.com/Dayne-Game" rel="noreferrer" target="_blank" style={{ color: '#333' }}>My Github</a></span>
         </h3>
         <h3 style={{marginBottom: '10px'}}>
